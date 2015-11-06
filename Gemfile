@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'rails-api'
-gem 'graphql-ruby'
+gem 'graphql'
 
 
 group :development do
