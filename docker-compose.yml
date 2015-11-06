@@ -3,7 +3,7 @@ api:
   volumes:
     - .:/myapp
   ports:
-    - "80:80"
+    - "80:3000"
   links:
     - db
 db:
