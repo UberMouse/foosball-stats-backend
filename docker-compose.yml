@@ -1,0 +1,14 @@
+api:
+  build: .
+  volumes:
+    - .:/myapp
+  ports:
+    - "80:80"
+  links:
+    - db
+db:
+  image: postgres:9.4
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_PASSWORD=root

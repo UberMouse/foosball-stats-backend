@@ -14,5 +14,4 @@ RUN bundle install
 
 WORKDIR /myapp
 
-ADD . /myapp
 CMD rails s -p 80
