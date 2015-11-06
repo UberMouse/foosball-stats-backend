@@ -5,6 +5,7 @@ gem 'rails', '4.2.0'
 gem 'rails-api'
 gem 'graphql'
 gem 'pg'
+gem "graphql-relay"
 
 
 group :development do
