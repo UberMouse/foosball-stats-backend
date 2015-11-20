@@ -14,4 +14,5 @@ RUN bundle install
 
 WORKDIR /myapp
 
-CMD rails s -b 0.0.0.0
+EXPOSE 3000
+CMD rescue rails s -b 0.0.0.0

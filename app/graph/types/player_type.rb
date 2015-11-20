@@ -5,7 +5,5 @@ PlayerType = GraphQL::ObjectType.define do
 
   field :name, !types.String
   field :avatar, types.String
-  field :matches, MatchType.connection_type do
-    resolve ->(obj, args, ctx) {obj.matches}
-  end
+  connection :matches, ->{MatchType.connection_type}
 end

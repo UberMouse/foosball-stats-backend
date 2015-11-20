@@ -1,11 +1,10 @@
 NodeIdentification = GraphQL::Relay::GlobalNodeIdentification.define do
   object_from_id ->(id) do
     type_name, id = NodeIdentification.from_global_id(id)
-    binding.pry
+    type_name.constantize.find(id)
   end
 
   type_from_object ->(object) do
-    binding.pry
-    object.class
+    FoosballSchema.types[object.class.name]
   end
 end

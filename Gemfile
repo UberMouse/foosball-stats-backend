@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'rails-api'
-gem 'graphql'
+gem 'graphql', '~> 0.9'
 gem 'pg'
-gem "graphql-relay"
+gem "graphql-relay", '~> 0.4'
 
 
 group :development do
@@ -19,6 +19,10 @@ group :test do
 end
 
 group :development, :test do
+  gem 'better_errors'
+  gem 'web-console', '~> 2.0'
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
 end

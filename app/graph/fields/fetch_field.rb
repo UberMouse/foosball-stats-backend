@@ -1,5 +1,5 @@
 class FetchField < GraphQL::Field
-  def initialize(model, type)
+  def initialize(model:, type:)
     self.type = type
     @model = model
     self.description = "Find a #{model.name} by ID"
@@ -13,5 +13,9 @@ class FetchField < GraphQL::Field
 
   def resolve(object, arguments, ctx)
     @model.find(arguments["id"])
+  end
+
+  def unwrap
+    self.type
   end
 end
