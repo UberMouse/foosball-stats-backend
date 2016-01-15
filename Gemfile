@@ -24,4 +24,5 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
+  gem 'guard-rspec', require: false
 end
