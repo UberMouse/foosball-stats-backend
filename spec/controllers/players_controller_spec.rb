@@ -20,5 +20,11 @@ RSpec.describe PlayersController do
       expect(player.name).to eq('Taylor')
       expect(player.avatar).to eq('http://avatar.io/avatar.png')
     end
+
+    it "returns a 400 error if no params are passed" do
+      post :create
+
+      expect(response.status).to eq(400)
+    end
   end
 end
