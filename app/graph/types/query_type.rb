@@ -1,7 +1,9 @@
 QueryType = GraphQL::ObjectType.define do
   name "Query"
 
-  field :player, PlayerType, field: FetchField.new(model: Player, type: PlayerType)
-  field :match, MatchType, field: FetchField.new(model: Match, type: MatchType)
+  field :viewer do
+    type ViewerType
+    resolve ->{OpenStruct.new}
+  end
   field :node, field: NodeIdentification.field
 end

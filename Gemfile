@@ -6,6 +6,7 @@ gem 'rails-api'
 gem 'graphql', '~> 0.9'
 gem 'pg'
 gem "graphql-relay", '~> 0.4'
+gem 'rack-cors', :require => 'rack/cors'
 
 
 group :development do

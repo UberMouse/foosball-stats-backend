@@ -1,0 +1,454 @@
+tail -f log/staging.log
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:49:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4206ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:49:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4129ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:50:25 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "title"=>["Freak the Sheep: Send me your shizzle!"], "date"=>["2020-07-12 00:00:00 +1200"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Sun, 12 Jul 2020 00:00:00 +1200"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "collection"=>["Freak the Sheep", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}], "job_id"=>"568c64cd297b1f49d9000210", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 6.8274ms
+[WIPE AUTHORITIES] update_from_harvest({:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], :title=>["Freak the Sheep: Send me your shizzle!"], :date=>["2020-07-12 00:00:00 +1200"], :object_url=>["http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Sun, 12 Jul 2020 00:00:00 +1200"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], :collection=>["Freak the Sheep", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}], :job_id=>"568c64cd297b1f49d9000210", :source_id=>"testttt", :status=>"active"})
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] Setting attribute to new value of: [{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}]
+[WIPE AUTHORITIES] Original value is: []
+[WIPE AUTHORITIES] Set attribute to: [#<Dnz::Attachment _id: 568c64d1297b1f1ce8000002, name: "Freak the Sheep: Send me your shizzle!", url: "http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", file_size: nil, file_type: nil, dc_identifier: nil, dc_type: nil, date: nil, display_date: nil, description: nil, thumbnail_url: nil, large_thumbnail_url: nil, aspect_ratio: nil, ndha_rights: nil, title: nil>]
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:50:25 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "title"=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], "date"=>["2016-01-05 00:00:00 +1300"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Tue, 05 Jan 2016 00:00:00 +1300"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "collection"=>["Stinky Grooves", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], "job_id"=>"568c64cd297b1f49d9000210", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9296ms
+[WIPE AUTHORITIES] update_from_harvest({:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :title=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], :date=>["2016-01-05 00:00:00 +1300"], :object_url=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Tue, 05 Jan 2016 00:00:00 +1300"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :collection=>["Stinky Grooves", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], :job_id=>"568c64cd297b1f49d9000210", :source_id=>"testttt", :status=>"active"})
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] Setting attribute to new value of: [{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]
+[WIPE AUTHORITIES] Original value is: []
+[WIPE AUTHORITIES] Set attribute to: [#<Dnz::Attachment _id: 568c64d1297b1f1d25000001, name: "Stinky Grooves: Stinky Grooves: January 5, 2016", url: "http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", file_size: nil, file_type: nil, dc_identifier: nil, dc_type: nil, date: nil, display_date: nil, description: nil, thumbnail_url: nil, large_thumbnail_url: nil, aspect_ratio: nil, ndha_rights: nil, title: nil>]
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 59.1807ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c64d1297b1f1ce8000003'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:50:25 UTC, "created_at"=>2016-01-06 00:50:25 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 7.1175ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c64d1297b1f1ce8000003')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.4438ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c64d1297b1f1ce8000003')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c64d1297b1f1ce8000002'), "url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1685ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7945ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:count=>"sequences", :query=>{"seq_name"=>"record_record_id"}} runtime: 155.7862ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:25 UTC, "fragments.0.job_id"=>"568c64cd297b1f49d9000210", "fragments.0.updated_at"=>2016-01-06 00:50:25 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"56721cc4297b1f337e000039", "merged_fragment.title"=>"Freak the Sheep: Send me your shizzle!", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Freak the Sheep", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Sun, 12 Jul 2020 00:00:00 +1200", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2020-07-12 00:00:00 +1200"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 374.0835ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:findandmodify=>"sequences", "query"=>{"seq_name"=>"record_record_id"}, "update"=>{"$inc"=>{"number"=>1}}, "new"=>true} runtime: 4.2264ms
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:50:34 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "title"=>["Freak the Sheep: Send me your shizzle!"], "date"=>["2020-07-12 00:00:00 +1200"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Sun, 12 Jul 2020 00:00:00 +1200"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "collection"=>["Freak the Sheep", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}], "job_id"=>"568c64cd297b1f49d9000210", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 8947.4831ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 936.0830ms
+Completed 200 OK in 10224ms (Views: 0.5ms | Solr: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 450.1307ms
+[WIPE AUTHORITIES] update_from_harvest({:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], :title=>["Freak the Sheep: Send me your shizzle!"], :date=>["2020-07-12 00:00:00 +1200"], :object_url=>["http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Sun, 12 Jul 2020 00:00:00 +1200"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], :collection=>["Freak the Sheep", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}], :job_id=>"568c64cd297b1f49d9000210", :source_id=>"testttt", :status=>"active"})
+  MOPED: 127.0.0.1:27017 INSERT       database=dnz_api_staging collection=records documents=[{"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "record_type"=>0, "internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "source_url"=>nil, "status"=>"active", "landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "updated_at"=>2016-01-06 00:50:25 UTC, "created_at"=>2016-01-06 00:50:25 UTC, "record_id"=>36759649, "fragments"=>[{"_id"=>BSON::ObjectId('568c64d1297b1f1d25000002'), "priority"=>0, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "source_id"=>"testttt", "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>"95bFM", "display_collection"=>"95bFM", "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "title"=>"Stinky Grooves: Stinky Grooves: January 5, 2016", "date"=>["2016-01-05 00:00:00 +1300"], "object_url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "dc_type"=>["audio/mpeg"], "display_date"=>"Tue, 05 Jan 2016 00:00:00 +1300", "collection_title"=>["Stinky Grooves", "95bFM"], "job_id"=>"568c64cd297b1f49d9000210", "updated_at"=>2016-01-06 00:50:25 UTC, "created_at"=>2016-01-06 00:50:25 UTC, "attachments"=>[{"_id"=>BSON::ObjectId('568c64d1297b1f1d25000001'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}]}] flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 9379.7948ms
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] Setting attribute to new value of: [{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}]
+[WIPE AUTHORITIES] Original value is: []
+[WIPE AUTHORITIES] Set attribute to: [#<Dnz::Attachment _id: 568c64db297b1f1d54000001, name: "Freak the Sheep: Send me your shizzle!", url: "http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", file_size: nil, file_type: nil, dc_identifier: nil, dc_type: nil, date: nil, display_date: nil, description: nil, thumbnail_url: nil, large_thumbnail_url: nil, aspect_ratio: nil, ndha_rights: nil, title: nil>]
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:50:35 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "title"=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], "date"=>["2016-01-05 00:00:00 +1300"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Tue, 05 Jan 2016 00:00:00 +1300"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "collection"=>["Stinky Grooves", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], "job_id"=>"568c64cd297b1f49d9000210", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 42.5602ms
+Completed 200 OK in 10013ms (Views: 0.6ms | Solr: 0.0ms)
+WIPE:CREATE: params {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "title"=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], "date"=>["2016-01-05 00:00:00 +1300"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Tue, 05 Jan 2016 00:00:00 +1300"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "collection"=>["Stinky Grooves", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], "job_id"=>"568c64cd297b1f49d9000210", "source_id"=>"testttt"}, "required_fragments"=>nil, "action"=>"create", "controller"=>"supplejack_api/harvester/records", "format"=>"json"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5802ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.2626ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "fragments._id"=>BSON::ObjectId('568c64d1297b1f1d25000002')} update={"$pullAll"=>{"fragments.$.attachments"=>[{"_id"=>BSON::ObjectId('568c64d1297b1f1d25000001'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.3151ms
+WIPE:update_from_harvest class RecordFragment
+WIPE:attributes {:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :title=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], :date=>["2016-01-05 00:00:00 +1300"], :object_url=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Tue, 05 Jan 2016 00:00:00 +1300"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :collection=>["Stinky Grooves", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], :job_id=>"568c64cd297b1f49d9000210", :source_id=>"testttt", :status=>"active"}
+WIPE:attributes {:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :title=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], :date=>["2016-01-05 00:00:00 +1300"], :object_url=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Tue, 05 Jan 2016 00:00:00 +1300"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :collection_title=>["Stinky Grooves", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], :job_id=>"568c64cd297b1f49d9000210", :source_id=>"testttt", :status=>"active"}
+WIPE:field:priority value:0
+WIPE:elsif
+WIPE:values : 0
+WIPE:field:category value:["Audio"]
+WIPE:if
+WIPE:values : ["Audio"]
+WIPE:field:language value:["en"]
+WIPE:if
+WIPE:values : ["en"]
+WIPE:field:content_partner value:["95bFM"]
+WIPE:if
+WIPE:values : ["95bFM"]
+WIPE:field:display_content_partner value:["95bFM"]
+WIPE:elsif
+WIPE:values : 95bFM
+WIPE:field:display_collection value:["95bFM"]
+WIPE:elsif
+WIPE:values : 95bFM
+WIPE:field:primary_collection value:["95bFM"]
+WIPE:if
+WIPE:values : ["95bFM"]
+WIPE:field:creator value:["95bFM"]
+WIPE:if
+WIPE:values : ["95bFM"]
+WIPE:field:usage value:["All rights reserved"]
+WIPE:if
+WIPE:values : ["All rights reserved"]
+WIPE:field:copyright value:["All rights reserved"]
+WIPE:if
+WIPE:values : ["All rights reserved"]
+WIPE:field:landing_url value:["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"]
+WIPE:elsif
+WIPE:values : http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/
+WIPE:field:title value:["Stinky Grooves: Stinky Grooves: January 5, 2016"]
+WIPE:elsif
+WIPE:values : Stinky Grooves: Stinky Grooves: January 5, 2016
+WIPE:field:date value:["2016-01-05 00:00:00 +1300"]
+WIPE:if
+WIPE:values : ["2016-01-05 00:00:00 +1300"]
+WIPE:field:object_url value:["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"]
+WIPE:elsif
+WIPE:values : http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3
+WIPE:field:dc_type value:["audio/mpeg"]
+WIPE:if
+WIPE:values : ["audio/mpeg"]
+WIPE:field:display_date value:["Tue, 05 Jan 2016 00:00:00 +1300"]
+WIPE:elsif
+WIPE:values : Tue, 05 Jan 2016 00:00:00 +1300
+WIPE:field:internal_identifier value:["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"]
+WIPE:field:collection_title value:["Stinky Grooves", "95bFM"]
+WIPE:if
+WIPE:values : ["Stinky Grooves", "95bFM"]
+WIPE:field:attachments value:[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]
+WIPE:field:job_id value:568c64cd297b1f49d9000210
+WIPE:elsif
+WIPE:values : 568c64cd297b1f49d9000210
+WIPE:field:source_id value:testttt
+WIPE:field:status value:active
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:35 UTC, "fragments.0.updated_at"=>2016-01-06 00:50:35 UTC}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.0943ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$pushAll"=>{"fragments.0.attachments"=>[{"_id"=>BSON::ObjectId('568c64db297b1f1b5100024a'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.9615ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.7696ms
+Completed 200 OK in 173ms (Views: 0.4ms | Solr: 0.0ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 5.1783ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c64db297b1f1d54000002'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:50:35 UTC, "created_at"=>2016-01-06 00:50:35 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1023ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c64db297b1f1d54000002')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1764ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c64db297b1f1d54000002')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c64db297b1f1d54000001'), "url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1721ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:35 UTC, "fragments.0.updated_at"=>2016-01-06 00:50:35 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"56721cc4297b1f337e000039", "merged_fragment.title"=>"Freak the Sheep: Send me your shizzle!", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Freak the Sheep", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Sun, 12 Jul 2020 00:00:00 +1200", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2020-07-12 00:00:00 +1200"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.9199ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.8088ms
+Completed 200 OK in 804ms (Views: 0.6ms | Solr: 0.0ms)
+Started POST "/harvester/records/568c64d1297b1f1d25000003/fragments.json" for 127.0.0.1 at 2016-01-06 13:50:37 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::FragmentsController#create as JSON
+  Parameters: {"fragment"=>{"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c64dd297b1f337e000052"}, "required_fragments"=>nil, "record_id"=>"568c64d1297b1f1d25000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6362ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8822ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$push"=>{"fragments"=>{"_id"=>BSON::ObjectId('568c64dd297b1f43af0967d0'), "priority"=>-1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "source_id"=>"test_enrich_subdoc_wipe", "description"=>"Adding some extra metadata from somewhere else", "job_id"=>"568c64dd297b1f337e000052", "updated_at"=>2016-01-06 00:50:37 UTC, "created_at"=>2016-01-06 00:50:37 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 211.7541ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9397ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.2366ms
+Started POST "/harvester/records/563017b1297b1f3084000006/fragments.json" for 127.0.0.1 at 2016-01-06 13:50:38 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::FragmentsController#create as JSON
+  Parameters: {"fragment"=>{"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c64dd297b1f337e000052"}, "required_fragments"=>nil, "record_id"=>"563017b1297b1f3084000006"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8645ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c64de297b1f43af0967d1'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:50:38 UTC, "created_at"=>2016-01-06 00:50:38 UTC}}} flags=[]
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.3860ms
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.6129ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "fragments._id"=>BSON::ObjectId('566e1c07297b1f5d31000000')} update={"$set"=>{"fragments.$.job_id"=>"568c64dd297b1f337e000052", "fragments.$.updated_at"=>2016-01-06 00:50:38 UTC}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.9647ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0083ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9393ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c64de297b1f43af0967d1')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1785ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c64de297b1f43af0967d1')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c64db297b1f1b5100024a'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.0371ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.9118ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c64de297b1f415009664c'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:50:38 UTC, "created_at"=>2016-01-06 00:50:38 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.8496ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:38 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c64dd297b1f337e000052", "merged_fragment.title"=>"Stinky Grooves: Stinky Grooves: January 5, 2016", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Stinky Grooves", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Tue, 05 Jan 2016 00:00:00 +1300", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2016-01-05 00:00:00 +1300"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 92.1692ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c64de297b1f415009664c')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 117.5579ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:38 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c64dd297b1f337e000052", "merged_fragment.title"=>"Freak the Sheep: Send me your shizzle!", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Freak the Sheep", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Sun, 12 Jul 2020 00:00:00 +1200", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2020-07-12 00:00:00 +1200"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 81.5098ms
+Completed 200 OK in 627ms (Views: 0.4ms | Solr: 0.0ms)
+Completed 200 OK in 257ms (Views: 0.3ms | Solr: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.2607ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.9791ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c64e6297b1f38ed000001'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:50:46 UTC, "created_at"=>2016-01-06 00:50:46 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.5761ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c64e6297b1f38ed000001')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.9960ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c64e6297b1f38ed000001')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c64db297b1f1b5100024a'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.8998ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"updated_at"=>2016-01-06 00:50:47 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c64dd297b1f337e000052", "merged_fragment.title"=>"Stinky Grooves: Stinky Grooves: January 5, 2016", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Stinky Grooves", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Tue, 05 Jan 2016 00:00:00 +1300", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2016-01-05 00:00:00 +1300"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.3635ms
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5457ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.2194ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.7ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4788ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4661ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4397ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 59ms (Views: 53.9ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.5438ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.7ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4493ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4450ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.7ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4988ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4540ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.2229ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4465ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4246ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:50:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.4768ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | Solr: 0.0ms)
+Overwriting existing field job_id in class SupplejackApi::ApiRecord::RecordFragment.
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:51:49 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "title"=>["Freak the Sheep: Send me your shizzle!"], "date"=>["2020-07-12 00:00:00 +1200"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Sun, 12 Jul 2020 00:00:00 +1200"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"], "collection"=>["Freak the Sheep", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}], "job_id"=>"568c6523297b1f49d9000211", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6185ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.4666ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 12.8948ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c6525297b1f3f7909716d'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:51:49 UTC, "created_at"=>2016-01-06 00:51:49 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1400ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c6525297b1f3f7909716d')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 8.3108ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c6525297b1f3f7909716d')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c6525297b1f3f7909716c'), "url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "name"=>"Freak the Sheep: Send me your shizzle!"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 11.4672ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"updated_at"=>2016-01-06 00:51:49 UTC, "fragments.0.job_id"=>"568c6523297b1f49d9000211", "fragments.0.updated_at"=>2016-01-06 00:51:49 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c64dd297b1f337e000052", "merged_fragment.title"=>"Freak the Sheep: Send me your shizzle!", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Freak the Sheep", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Sun, 12 Jul 2020 00:00:00 +1200", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2020-07-12 00:00:00 +1200"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 2.2360ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.5915ms
+Completed 200 OK in 237ms (Views: 0.6ms | Solr: 0.0ms)
+Started POST "/harvester/records.json" for 127.0.0.1 at 2016-01-06 13:51:49 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::RecordsController#create as JSON
+  Parameters: {"record"=>{"priority"=>0, "category"=>["Audio"], "language"=>["en"], "content_partner"=>["95bFM"], "display_content_partner"=>["95bFM"], "display_collection"=>["95bFM"], "primary_collection"=>["95bFM"], "creator"=>["95bFM"], "usage"=>["All rights reserved"], "copyright"=>["All rights reserved"], "landing_url"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "title"=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], "date"=>["2016-01-05 00:00:00 +1300"], "object_url"=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], "dc_type"=>["audio/mpeg"], "display_date"=>["Tue, 05 Jan 2016 00:00:00 +1300"], "internal_identifier"=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], "collection"=>["Stinky Grooves", "95bFM"], "attachments"=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], "job_id"=>"568c6523297b1f49d9000211", "source_id"=>"testttt"}, "required_fragments"=>nil}
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.4940ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "fragments._id"=>BSON::ObjectId('568c64d1297b1f1d25000002')} update={"$pullAll"=>{"fragments.$.attachments"=>[{"_id"=>BSON::ObjectId('568c64db297b1f1b5100024a'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.6397ms
+[WIPE AUTHORITIES] update_from_harvest({:priority=>0, :category=>["Audio"], :language=>["en"], :content_partner=>["95bFM"], :display_content_partner=>["95bFM"], :display_collection=>["95bFM"], :primary_collection=>["95bFM"], :creator=>["95bFM"], :usage=>["All rights reserved"], :copyright=>["All rights reserved"], :landing_url=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :title=>["Stinky Grooves: Stinky Grooves: January 5, 2016"], :date=>["2016-01-05 00:00:00 +1300"], :object_url=>["http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3"], :dc_type=>["audio/mpeg"], :display_date=>["Tue, 05 Jan 2016 00:00:00 +1300"], :internal_identifier=>["http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"], :collection=>["Stinky Grooves", "95bFM"], :attachments=>[{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}], :job_id=>"568c6523297b1f49d9000211", :source_id=>"testttt", :status=>"active"})
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] Setting attribute to new value of: [{"url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]
+[WIPE AUTHORITIES] Original value is: []
+[WIPE AUTHORITIES] Set attribute to: [#<Dnz::Attachment _id: 568c6525297b1f1377000006, name: "Stinky Grooves: Stinky Grooves: January 5, 2016", url: "http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", file_size: nil, file_type: nil, dc_identifier: nil, dc_type: nil, date: nil, display_date: nil, description: nil, thumbnail_url: nil, large_thumbnail_url: nil, aspect_ratio: nil, ndha_rights: nil, title: nil>]
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.3047ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c6525297b1f1377000007'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:51:49 UTC, "created_at"=>2016-01-06 00:51:49 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 3.0600ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c6525297b1f1377000007')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.3142ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c6525297b1f1377000007')} update={"$set"=>{"merged_fragment.attachments"=>[{"_id"=>BSON::ObjectId('568c6525297b1f1377000006'), "url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "name"=>"Stinky Grooves: Stinky Grooves: January 5, 2016"}]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.9991ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"updated_at"=>2016-01-06 00:51:49 UTC, "fragments.0.job_id"=>"568c6523297b1f49d9000211", "fragments.0.updated_at"=>2016-01-06 00:51:49 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c64dd297b1f337e000052", "merged_fragment.title"=>"Stinky Grooves: Stinky Grooves: January 5, 2016", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Stinky Grooves", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Tue, 05 Jan 2016 00:00:00 +1300", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2016-01-05 00:00:00 +1300"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 3.5494ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"source_url"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.6775ms
+Completed 200 OK in 181ms (Views: 0.5ms | Solr: 0.0ms)
+Started POST "/harvester/records/568c64d1297b1f1d25000003/fragments.json" for 127.0.0.1 at 2016-01-06 13:51:52 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Started POST "/harvester/records/563017b1297b1f3084000006/fragments.json" for 127.0.0.1 at 2016-01-06 13:51:53 +1300
+Value for params[:required_fragments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by SupplejackApi::Harvester::FragmentsController#create as JSON
+  Parameters: {"fragment"=>{"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c6527297b1f337e000053"}, "required_fragments"=>nil, "record_id"=>"568c64d1297b1f1d25000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5249ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7304ms
+[WIPE AUTHORITIES] update_from_harvest({"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c6527297b1f337e000053"})
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "fragments._id"=>BSON::ObjectId('568c64dd297b1f43af0967d0')} update={"$set"=>{"fragments.$.job_id"=>"568c6527297b1f337e000053", "fragments.$.updated_at"=>2016-01-06 00:51:53 UTC}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 3.5467ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.1288ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('568c64d1297b1f1d25000003')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7969ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 2.9841ms
+Processing by SupplejackApi::Harvester::FragmentsController#create as JSON
+  Parameters: {"fragment"=>{"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c6527297b1f337e000053"}, "required_fragments"=>nil, "record_id"=>"563017b1297b1f3084000006"}
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c6529297b1f1462000002'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:51:53 UTC, "created_at"=>2016-01-06 00:51:53 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1247ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 5.6688ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4765ms
+[WIPE AUTHORITIES] update_from_harvest({"priority"=>-1, "source_id"=>"test_enrich_subdoc_wipe", "description"=>["Adding some extra metadata from somewhere else"], "job_id"=>"568c6527297b1f337e000053"})
+[WIPE AUTHORITIES] MANY_RELATIONS: authorities
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: attachments
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] MANY_RELATIONS: locations
+[WIPE AUTHORITIES] MANY_RELATIONS loop done
+[WIPE AUTHORITIES] update_from_harvest done
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "fragments._id"=>BSON::ObjectId('566e1c07297b1f5d31000000')} update={"$set"=>{"fragments.$.job_id"=>"568c6527297b1f337e000053", "fragments.$.updated_at"=>2016-01-06 00:51:53 UTC}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.0275ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6533ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={:_id=>BSON::ObjectId('563017b1297b1f3084000006')} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6184ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003'), "merged_fragment._id"=>BSON::ObjectId('568c6529297b1f1462000002')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.2320ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('568c64d1297b1f1d25000003')} update={"$set"=>{"updated_at"=>2016-01-06 00:51:53 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c6527297b1f337e000053", "merged_fragment.title"=>"Stinky Grooves: Stinky Grooves: January 5, 2016", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Stinky Grooves", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Tue, 05 Jan 2016 00:00:00 +1300", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2016-01-05 00:00:00 +1300"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/upload/37/5h/ja/ws/sg%2005%2001%20128.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 2.0109ms
+Completed 200 OK in 98ms (Views: 0.5ms | Solr: 0.0ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$unset"=>{"merged_fragment"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 0.8921ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"merged_fragment"=>{"_id"=>BSON::ObjectId('568c6529297b1f147f000007'), "priority"=>1, "_type"=>"SupplejackApi::ApiRecord::RecordFragment", "updated_at"=>2016-01-06 00:51:53 UTC, "created_at"=>2016-01-06 00:51:53 UTC}}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 54.1920ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006'), "merged_fragment._id"=>BSON::ObjectId('568c6529297b1f147f000007')} update={"$unset"=>{"merged_fragment.priority"=>true}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 1.1152ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dnz_api_staging collection=records selector={"_id"=>BSON::ObjectId('563017b1297b1f3084000006')} update={"$set"=>{"updated_at"=>2016-01-06 00:51:53 UTC, "merged_fragment.priority"=>nil, "merged_fragment.job_id"=>"568c6527297b1f337e000053", "merged_fragment.title"=>"Freak the Sheep: Send me your shizzle!", "merged_fragment.alternate_title"=>[], "merged_fragment.description"=>"Adding some extra metadata from somewhere else", "merged_fragment.additional_description"=>[], "merged_fragment.content_partner"=>["95bFM"], "merged_fragment.display_content_partner"=>"95bFM", "merged_fragment.collection_title"=>["Freak the Sheep", "95bFM"], "merged_fragment.lat_lng"=>[], "merged_fragment.display_collection"=>"95bFM", "merged_fragment.primary_collection"=>["95bFM"], "merged_fragment.contributing_partner"=>[], "merged_fragment.category"=>["Audio"], "merged_fragment.creator"=>["95bFM"], "merged_fragment.contributor"=>[], "merged_fragment.copyright"=>["All rights reserved"], "merged_fragment.citation"=>[], "merged_fragment.language"=>["en"], "merged_fragment.publisher"=>[], "merged_fragment.usage"=>["All rights reserved"], "merged_fragment.source"=>[], "merged_fragment.tag"=>[], "merged_fragment.holding"=>[], "merged_fragment.library_collection"=>[], "merged_fragment.eprints_type"=>[], "merged_fragment.has_version"=>[], "merged_fragment.relation"=>[], "merged_fragment.is_part_of"=>[], "merged_fragment.dc_type"=>["audio/mpeg"], "merged_fragment.display_date"=>"Sun, 12 Jul 2020 00:00:00 +1200", "merged_fragment.format"=>[], "merged_fragment.dc_identifier"=>[], "merged_fragment.date"=>["2020-07-12 00:00:00 +1200"], "merged_fragment.published_date"=>[], "merged_fragment.year"=>[], "merged_fragment.decade"=>[], "merged_fragment.century"=>[], "merged_fragment.landing_url"=>"http://www.95bfm.co.nz/bcasts/send-me-your-shizzle/", "merged_fragment.rights_url"=>[], "merged_fragment.object_url"=>"http://www.95bfm.co.nz/assets/sm/202410/3/SENDYOURSHIZZLE.mp3", "merged_fragment.marsden_code"=>[], "merged_fragment.subject"=>[], "merged_fragment.coverage"=>[], "merged_fragment.source_contributor_name"=>[]}} flags=[]
+                         COMMAND      database=dnz_api_staging command={:getlasterror=>1, :w=>1} runtime: 2.8563ms
+Completed 200 OK in 138ms (Views: 0.4ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.6729ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 1.2ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.7627ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 183ms (Views: 1.1ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:53 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 1.0101ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 25ms (Views: 1.0ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8146ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.3775ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 0.9ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.9902ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 15ms (Views: 1.3ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.8785ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 1.2ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.8185ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 15ms (Views: 1.2ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 2.6440ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 15ms (Views: 1.2ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.6049ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.9ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.9195ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.2587ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6101ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.2301ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.7ms | Solr: 0.0ms)
+Started GET "/status" for 127.0.0.1 at 2016-01-06 13:51:54 +1300
+Processing by SupplejackApi::StatusController#show as */*
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5386ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dnz_api_staging command={:ping=>1} runtime: 0.2654ms
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.6ms | Solr: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=dnz_api_staging collection=records selector={"$query"=>{"internal_identifier"=>"http://www.95bfm.co.nz/bcasts/stinky-grooves-january-5-2016/"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.6134ms
+^C
+[developer@dnz0a current]$
