@@ -3,9 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'rails-api'
-gem 'graphql', '~> 0.9'
 gem 'pg'
-gem "graphql-relay", '~> 0.4'
 gem 'rack-cors', :require => 'rack/cors'
 
 
