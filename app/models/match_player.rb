@@ -1,4 +1,6 @@
 class MatchPlayer < ActiveRecord::Base
   belongs_to :match
   belongs_to :player
+
+  validates_presence_of :match_id, :player_id, :goals
 end
