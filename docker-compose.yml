@@ -4,11 +4,11 @@ api:
     - .:/myapp
   ports:
     - "80:3000"
-  links:
-    - db
+  container_name: api
 db:
   image: postgres:9.4
   ports:
     - "5432:5432"
+  container_name: db
   environment:
     - POSTGRES_PASSWORD=root
