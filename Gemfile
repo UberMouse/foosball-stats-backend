@@ -9,6 +9,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 group :development do
   gem 'spring'
+  gem 'web-console', '~> 2.0'
 end
 
 group :test do
@@ -20,7 +21,6 @@ end
 
 group :development, :test do
   gem 'better_errors'
-  gem 'web-console', '~> 2.0'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-rescue'
