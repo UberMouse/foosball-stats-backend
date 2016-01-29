@@ -2,7 +2,7 @@ FactoryGirl.define do
   factory :match do
     date Date.today
 
-    ignore do
+    transient do
       match_players nil
       number_of_match_players 4
     end
