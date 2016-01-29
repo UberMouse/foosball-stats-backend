@@ -11,5 +11,8 @@ RSpec.describe MatchPlayer do
 
     it {is_expected.to define_enum_for(:position).with([:goalie, :striker])}
     it {is_expected.to define_enum_for(:team).with([:red, :white])}
+
+    it {is_expected.to belong_to(:match)}
+    it {is_expected.to belong_to(:player)}
   end
 end
