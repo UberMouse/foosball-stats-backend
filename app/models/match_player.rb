@@ -1,4 +1,9 @@
 class MatchPlayer < ActiveRecord::Base
+  GOALIE     = 0
+  STRIKER    = 1
+  RED_TEAM   = 0
+  WHITE_TEAM = 1
+
   belongs_to :match
   belongs_to :player
 
