@@ -11,7 +11,7 @@ FactoryGirl.define do
       if evaluator.match_players.present?
         evaluator.match_players.each{|x| match.match_players << x}
       else
-        match.match_players = create_list(:match_player, evaluator.number_of_match_players)
+        match.match_players_attributes = evaluator.number_of_match_players.times.map{attributes_for(:match_player, match: match)}
       end
 
       match.save
